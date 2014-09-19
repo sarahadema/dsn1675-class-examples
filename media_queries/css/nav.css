@@ -29,7 +29,26 @@ html {
 }
 
 @media only screen and (min-width: 20em) {
+	.nav {
+		text-align: center;
+	}
+
 	.nav li {
 		display: inline-block;
+		border:0;
 	}
+}
+
+@media only screen and (min-width: 50em) {
+
+	.nav {
+		float: left;
+		width: 30%;
+	}
+
+	.nav li {
+		display: block;
+		border-top: 1px solid #666;
+	}
+	
 }
