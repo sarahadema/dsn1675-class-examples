@@ -1,0 +1,35 @@
+@-moz-viewport {width: device-width; scale:1;}
+@-ms-viewport {width: device-width; scale:1;}
+@-o-viewport {width: device-width; scale:1;}
+@-webkit-viewport {width: device-width; scale:1;}
+@-viewport {width: device-width; scale:1;} /* eventually this will be the only thing used but the other one is necessary to work with all browsers because they are still bata testing it */
+
+html {
+	box-sizing; border-box;
+	/*changes the css box model and makes it easier to manage */
+	/* changes the width to always be 100pixels so you don't have to do weird math to figure out padding and width */
+}
+
+*,*:before, *after {
+	box-sizing:inherit;
+}
+
+.title {
+	color: red;
+}
+
+@media only screen and (min-width: 25em) {
+
+	.title { 
+		color: blue;
+		font-size: 10rem;
+	}
+
+}
+
+@media only screen and (min-width: 45em) {
+
+	.title {
+		color: green;
+	}
+}
