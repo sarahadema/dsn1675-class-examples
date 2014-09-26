@@ -9,14 +9,16 @@ html {
 	-moz-text-size-adjust:100%;
 	-ms-text-size-adjust:100%;
 	-webkit-text-size-adjust:100%;
+	-webkit-text-size-adjust:100%;
 }
 
-*,
-*::after,
-*::before {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+*,*:before, *:after {
+  box-sizing:inherit;
+}
+
+img {
+	width: 100%;
+	display: block;
 }
 
 h2 {
@@ -25,6 +27,7 @@ h2 {
 
 .grid {
 	background-color: red;
+	overflow: hidden;
 }
 
 .unit {
@@ -38,6 +41,9 @@ h2 {
 	padding-right: 1em;
 }
 
+.unit-2-3 {
+	width: 66.6666%;
+}
 
 
 
