@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Forms</title>
+  <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+  
+ <form action="thanks.html" method="post">
+
+ 	<div>	
+ 		<label for="name">Name</label>
+ 		<input id="name">
+ 	</div>	
+
+ 	<div>	
+ 		<label for="e-mail">Email address</label>
+ 		<input class="field" type="email" id="e-mail">
+ 	</div>	
+
+ 	<div>	
+ 		<label for="types">Input Types</label>
+ 		<input type="search" id="types">
+ 	</div>	
+
+ 	<!-- 
+ 		All the input types:
+ 		-email
+ 		-text (default one if you don't put a type on the input)
+ 		-password
+ 		-url
+ 		-tel
+ 		-date
+ 		-time
+ 		-color
+ 		-file
+ 		-search
+ 		-number
+ 	-->
+
+ 	<div>
+ 		<label for="cats">How many cats?</label>
+ 		<input type="range" id="cats" min="7" max="20" value="17">
+
+ 		<!--
+ 			min, max also work for type="number"
+ 		-->	
+ 	</div>
+
+ 	<div>
+ 		<label for="cat-names">Name all your cats:</label>
+ 		<textarea id="cat-names"></textarea>
+ 	</div>	
+
+ 	<div>
+ 		<input type="checkbox" id="love">
+ 		<label for="love">I love cats!</label>
+ 	</div>
+
+ 	<fieldset>
+ 		<legend>How much do you love cats?</legend>
+
+ 		<input type="radio" id="not" name="love-cats">
+ 		<label for"not"> Not at all. </label>
+
+ 		<input type="radio" id="kinda" name="love-cats">
+ 		<label for"kinda"> Kinda</label>
+
+ 		<input type="radio" id="lots" name="love-cats">
+ 		<label for"lots"> Super lots! </label>
+
+ 	</fieldset>
+
+ 	<div>
+ 		<label for="fav"> Favourite Cat </label>
+ 		<select id="fav">
+ 			<option>Lion</option>
+ 			<option>Tiger</option>
+ 			<option selected>Lynx</option>
+ 			<option>House Cat</option>
+ 		</select>
+
+ 	</div>
+ 		
+ 	<div>
+ 		<button type="submit">Send!</button>
+ 	</div>
+ 		
+ </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

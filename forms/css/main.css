@@ -1,0 +1,43 @@
+label {
+	display: block;
+}
+
+/* Get only the labels that come immediately after an input */
+input + label {
+	display: inline-block;
+}
+
+button {
+	font-size: 3em;
+	font-family: cursive;
+	border: 3px solid #000;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-radius: 6px;
+	background-image: linear-gradient(45deg, red,orange,red);
+	color: #fff;
+	padding: 0.5em 3em;
+	cursor: pointer;
+}
+
+button:hover{
+	background-image: linear-gradient(45deg, orange,red,orange);
+}
+
+button:active {
+	box-shadow: 1px 1px 50px red;
+}
+
+.field {
+	border: 1px solid #000;
+	font-size:1.5em;
+	border-radius:16px;
+	background-color: #e2e2e2;
+	padding: 0.2em 0.5em;
+}
+
+.field:focus {
+	background-color: orange;
+	outline: 4px solid #000;
+	color: #fff;
+}
